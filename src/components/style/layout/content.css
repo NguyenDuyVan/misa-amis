@@ -1,0 +1,45 @@
+.content {
+  width: calc(100% - 178px);
+  height: calc(100vh - 48px);
+  padding: 24px 16px 0;
+  box-sizing: border-box;
+  position: relative;
+  overflow-y: scroll;
+  background-color: #f4f5f8;
+}
+
+.content .content-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content .content-header .content-header-text {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.content .content-toolbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 8px;
+  background-color: #fff;
+  padding: 16px;
+}
+
+.content .content-toolbar .m-input-icon {
+  background-image: url("../../../assets/img/Sprites.64af8f61.svg");
+  background-position: -992px -360px;
+}
+
+.content .content-toolbar .refresh-btn {
+  width: 24px;
+  height: 24px;
+  border-radius: 2px;
+  background-image: url("../../../assets/img/Sprites.64af8f61.svg");
+  background-repeat: no-repeat;
+  background-position: -423px -201px;
+  cursor: pointer;
+  padding: 0 6px;
+  margin-left: 20px;
+}

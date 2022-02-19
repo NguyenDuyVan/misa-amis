@@ -1,0 +1,51 @@
+.m-row .checkbox-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  top: -10px;
+}
+
+.checkbox-container .m-checkbox {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border: 1px solid #35BF22;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+.checkbox-container .m-checkbox:checked ~ .checkmark {
+  background-color: #fff;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox-container .m-checkbox:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkbox-container .checkmark:after {
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid #35BF22;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
